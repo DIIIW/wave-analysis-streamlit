@@ -131,7 +131,7 @@ def ExportTable(cuttLoc , PeakLoc):
         State = PeakLoc['State'][i]
         ABS_TC = abs(TC3-TC1)
         ABS_PK = abs(PK3-PK1)
-        ABS_H  = abs(H3-H1)
+        ABS_H  = abs(H2-H1)
 
         temp = [State, TC1, TC2, TC3, PK1, PK2, PK3, H1, H2, H3, ABS_TC, ABS_PK, ABS_H]
         temp_df = pd.DataFrame(data=[temp], columns=col_Export)
